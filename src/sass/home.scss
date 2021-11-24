@@ -1,5 +1,5 @@
 @import "fonts-montserrat";
-//@import "fonts-proximaNova";
+@import "fonts-poppins";
 // Variables
 @import "md_variables";
 @import "variables";
@@ -17,19 +17,21 @@
 @import "footer";
 
 body{
-     font-family: "montserrat";
+     font-family: "Poppins", sans-serif;
+     overflow-x: hidden;
     }
 
 #kh-page-index {
+/*Home banner Section start*/  
   .home-banner{
-    position: relative;
     .banner-image{
+      position: relative;
       img{
         position: absolute;
         width: 100%;
         object-fit: cover;
         object-position: center;
-      }
+        }
       .banner-content{
         max-width: 572px;
       .banner-title{
@@ -43,7 +45,7 @@ body{
         align-items: center;
         justify-content: center;
         padding: 0 111px;
-      }
+        }
       .brand-info{
         color: #FFFFFF;
         position: absolute;
@@ -56,7 +58,7 @@ body{
         align-items: center;
         justify-content: center;
         padding: 0 111px;
-      }
+        }
       .btnbuy{
         color: #FFFFFF;
         position: absolute;
@@ -67,22 +69,49 @@ body{
         width: 137px;
         height: 50px;
         background-color: $primary;
-      }
+        }
+
       .btn-text{
-        color: #FFFFFF;
-        position: absolute;
+        position: relative;
         top:350px;
         left: 280px;
-        font-size: 16px;
-        font-weight: bold;
         border-radius: 5px;
         border:none;
         width: 224px;
         height: 50px;
         opacity: 0.15;
-        z-index: 1;
-      }
-     } 
+        &::after{
+          position: absolute;
+          content: '';
+          top: 0;
+          left: 0;
+          color: #FFFFFF;
+          font-size: 16px;
+          font-weight: bold;
+          }
+        }
+       }
+
+     .banner-mobile{
+      img{
+        position: absolute;
+        left: 67%;
+        top: 0;
+        width: 50%;
+        }
+      } 
+    }
+  }
+/*Home banner section End*/
+
+/*Best Sell Section Start*/
+ .best-sell{
+    background-color: #F8F8F8;
+    padding-top: 46px;
+   .best-head{
+     color: #302F2F;
+     text-align: center;
+     text-transform: uppercase;
     }
   }
 }
