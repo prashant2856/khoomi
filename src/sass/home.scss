@@ -15,6 +15,7 @@
 
 @import "header";
 @import "footer";
+@import "form";
 
 body{
      font-family: "Poppins", sans-serif;
@@ -25,81 +26,40 @@ body{
 /*Home banner Section start*/  
   .home-banner{
     .banner-image{
+      padding: 70px 0;
       position: relative;
-      img{
-        position: absolute;
-        width: 100%;
-        object-fit: cover;
-        object-position: center;
-        }
+      overflow: hidden;
+      height: 560px;
+      background: url(../images/slide1.jpg) no-repeat center center;
+      background-size: cover;
+  
+      
       .banner-content{
         max-width: 572px;
       .banner-title{
         color: #fff; 
         font-weight: bold;
-        position: absolute;
-        top: 105px;
-        left: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 0 111px;
         }
-      .brand-info{
-        color: #FFFFFF;
-        position: absolute;
-        line-height: 32px;
-        font-size: 20px;
-        top: 260px;
-        left: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 0 111px;
+        .brand-info{
+            color: #FFFFFF;
+            line-height: 32px;
+            font-size: 20px;
         }
-      .btnbuy{
-        color: #FFFFFF;
-        position: absolute;
-        top:350px;
-        left: 111px;
-        border-radius: 5px;
-        border:none;
-        width: 137px;
-        height: 50px;
-        background-color: $primary;
-        }
+        .btnbuy{
+           
+           font-size: 16px; 
+         }
 
-      .btn-text{
-        position: relative;
-        top:350px;
-        left: 280px;
-        border-radius: 5px;
-        border:none;
-        width: 224px;
-        height: 50px;
-        opacity: 0.15;
-        &::after{
-          position: absolute;
-          content: '';
-          top: 0;
-          left: 0;
-          color: #FFFFFF;
+        .btn-dark{
+          
+          background-color: rgba(255,255,255,0.2);
+          border: none;
           font-size: 16px;
-          font-weight: bold;
-          }
-        }
+         }
+
        }
 
-     .banner-mobile{
-      img{
-        position: absolute;
-        left: 67%;
-        top: 0;
-        width: 50%;
-        }
-      } 
+     
     }
   }
 /*Home banner section End*/
@@ -108,10 +68,15 @@ body{
  .best-sell{
     background-color: #F8F8F8;
     padding-top: 46px;
+    height: 282px;
    .best-head{
      color: #302F2F;
      text-align: center;
      text-transform: uppercase;
+    }
+    .best-title{
+      color: #111111;
+      text-align: center;
     }
   }
 }
