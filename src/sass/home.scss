@@ -17,66 +17,257 @@
 @import "footer";
 @import "form";
 
-body{
-     font-family: "Poppins", sans-serif;
-     overflow-x: hidden;
-    }
+body {
+  font-family: "Poppins", sans-serif;
+}
 
 #kh-page-index {
-/*Home banner Section start*/  
-  .home-banner{
-    .banner-image{
+  /*Home banner Section start*/
+  .home-banner {
+    .banner-image {
       padding: 70px 0;
       position: relative;
       overflow: hidden;
       height: 560px;
       background: url(../images/slide1.jpg) no-repeat center center;
       background-size: cover;
-  
-      
-      .banner-content{
-        max-width: 572px;
-      .banner-title{
-        color: #fff; 
-        font-weight: bold;
-        }
-        .brand-info{
-            color: #FFFFFF;
-            line-height: 32px;
-            font-size: 20px;
-        }
-        .btnbuy{
-           
-           font-size: 16px; 
-         }
 
-        .btn-dark{
-          
-          background-color: rgba(255,255,255,0.2);
+      .banner-content {
+        max-width: 572px;
+        .banner-title {
+          color: #fff;
+          font-weight: bold;
+        }
+        .brand-info {
+          color: #ffffff;
+          line-height: 32px;
+          font-size: 20px;
+        }
+        .btnbuy {
+          font-size: 16px;
+        }
+
+        .btn-dark {
+          background-color: rgba(255, 255, 255, 0.2);
           border: none;
           font-size: 16px;
-         }
-
-       }
-
-     
+        }
+      }
     }
   }
-/*Home banner section End*/
+  /*Home banner section End*/
 
-/*Best Sell Section Start*/
- .best-sell{
-    background-color: #F8F8F8;
-    padding-top: 46px;
-    height: 282px;
-   .best-head{
-     color: #302F2F;
-     text-align: center;
-     text-transform: uppercase;
+  /*Best Sell Section Start*/
+  .best-sell {
+    padding: 50px 0;
+    position: relative;
+    background-color: #fff;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 40%;
+      background-color: #f8f8f8;
+      z-index: 1;
     }
-    .best-title{
+    .container {
+      position: relative;
+      z-index: 2;
+    }
+    .best-head {
+      color: #302f2f;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .best-title {
       color: #111111;
       text-align: center;
+      margin-bottom: 39px;
     }
+
+    .cmn-box {
+      max-width: 270px;
+      width: 100%;
+      background-color: #fff;
+      border-radius: 10px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+      .pro-title {
+        padding: 17px 0;
+        color: #111111;
+        text-align: center;
+        font-weight: 600;
+        margin-bottom: 17px;
+      }
+      .btn-price {
+        background-color: #ff4f0417;
+        border-radius: 17px;
+        font-size: 14px;
+        font-weight: 500;
+        color: $primary;
+      }
+    }
+    .prod-btn {
+      padding-top: 52px;
+      font-weight: 500;
+      text-align: center;
+      color: #302f2f;
+      font-size: 16px;
+    }
+  }
+  /*Best Sell Section End*/
+
+  /*Discount banner start*/
+
+  .discount-banner {
+    padding: 72px 0;
+    background-image: url("../images/banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    .discount-banner-wrap {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+
+      .discount {
+        max-width: 572px;
+        .offer-text {
+          color: #ffffff;
+          line-height: 57px;
+          font-weight: 400;
+        }
+      }
+      .btn-shop {
+        border: 1px solid #ffffff;
+      }
+    }
+  }
+  /*Discount Banner End*/
+
+  /*Product Section start*/
+  .shoe-collection {
+    padding: 79px 0;
+    .shoe-head {
+      color: #302f2f;
+      text-align: center;
+      font-weight: 400;
+    }
+    .new-title {
+      color: #111111;
+      text-align: center;
+      font-weight: 600;
+    }
+    .left-box {
+      .cmn-pro-box {
+        background-color: #f5f5f5;
+        border-radius: 10px;
+        padding: 0 20px 20px 20px;
+        .pro-image {
+          margin: 0;
+          width: 100%;
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+        .shoe-title {
+          color: #111111;
+          font-weight: 500;
+        }
+        .btn-pro-price {
+          background-color: #ffffff;
+          border-radius: 17px;
+          font-size: 16px;
+          font-weight: 500;
+          color: $primary;
+        }
+      }
+    }
+    .right-box {
+      background-color: #f5f5f6;
+      border-radius: 10px;
+      padding: 20px 0 45px 20px;
+
+      .btn-sale {
+        border-radius: 17px;
+      }
+
+      .btn-offer-price {
+        border-radius: 17px;
+        background-color: #fff;
+        color: $primary;
+        font-size: 16px;
+        margin-right: 20px;
+      }
+
+      .right-pro-image {
+        padding-top: 34px;
+        width: 100%;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      .brand-name {
+        padding-top: 25px;
+        color: #111111;
+      }
+      .brand-title {
+        color: #7a7a7a;
+      }
+    }
+  }
+  /*Shoe Collection End*/
+
+  /*Top Product Start*/
+  .top-product {
+    padding: 125px 0;
+    .top-head {
+      color: #302f2f;
+      text-align: center;
+      font-family: 400;
+    }
+    .top-title {
+      color: #302f2f;
+      text-align: center;
+      font-family: 500;
+    }
+    .cmn-top-box {
+      margin-top: 40px;
+      background-color: #f5f5f5;
+      border-radius: 10px;
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+    .top-pro-info{
+      display: flex;
+      justify-content: space-between;
+      padding-top: 10px;
+    .top-pro-title {
+      padding-top: 16px;
+      color: #111111;
+      font-weight: 500;
+    }
+    .btn-top-price {
+      background-color: #FF4F0416;
+      border-radius: 17px;
+      font-size: 14px;
+      font-weight: 500;
+      color: $primary;
+    }
+   }
   }
 }
