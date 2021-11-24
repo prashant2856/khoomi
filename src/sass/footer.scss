@@ -1,3 +1,77 @@
 footer.kh-footer {
+ .footer-info{
+     padding-top: 75px;
+     .footer1{
+       width: 88px;
+       img{
+           width: 100%;
+           height: 100%;
+           object-fit: cover;
+       }  
+       .comp-info{
+           max-width: 255px;
+        .comp-text{
+           color: #302F2F; 
+           font-size: 16px;
+           font-weight: 400;
+        }   
+       }
+     }
+     .comp-detail{
+         padding-top: 30px;
+         max-width: 255px;
+         .comp-text{
+           color: #302F2F;
+           font-size: 16px;
+           line-height: 26px;
+         }
+     }
+     .quick {
 
+        h5 {
+            font-size: 14px;
+            color: #302F2F;
+           
+        }
+
+        ul {
+            li {
+                text-decoration: none;
+                list-style: none;
+
+                a {
+                    color: #302F2F;
+                    font-size: 14px;
+                    line-height: 26px;
+                }
+            }
+
+        }
+     
+    }
+
+    .quick2 {
+
+        h5 {
+            font-size: 14px;
+            color: #302F2F;
+           
+        }
+
+        ul {
+            li {
+                text-decoration: none;
+                list-style: none;
+
+                a {
+                    color: #302F2F;
+                    font-size: 14px;
+                    line-height: 26px;
+                }
+            }
+
+        }
+     
+    }
+ }
 }
