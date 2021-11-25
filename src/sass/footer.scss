@@ -11,9 +11,13 @@ footer.kh-footer {
        .comp-info{
            max-width: 255px;
         .comp-text{
-           color: #302F2F; 
-           font-size: 16px;
-           font-weight: 400;
+            color: #302F2F;
+            font-size: 13px;
+            font-weight: 400;
+           @include media-breakpoint-up(sm) {
+            font-size: 16px;
+            font-weight: 400;
+           }
         }   
        }
      }
@@ -22,8 +26,12 @@ footer.kh-footer {
          max-width: 255px;
          .comp-text{
            color: #302F2F;
-           font-size: 16px;
+           font-size: 13px;
            line-height: 26px;
+           @include media-breakpoint-up(sm){
+            font-size: 16px;
+            line-height: 26px;
+           }
          }
      }
      .quick {
@@ -41,7 +49,7 @@ footer.kh-footer {
 
                 a {
                     color: #302F2F;
-                    font-size: 14px;
+                    font-size: 13px;
                     line-height: 26px;
                 }
             }
@@ -64,7 +72,7 @@ footer.kh-footer {
 
                 a {
                     color: #302F2F;
-                    font-size: 14px;
+                    font-size: 13px;
                     line-height: 26px;
                 }
             }
@@ -82,14 +90,14 @@ footer.kh-footer {
         
         p{
            color: #302F2F;
-           font-size: 14px;
+           font-size: 13px;
            font-size: 400; 
         }
         
         span{
           a {
            color: #302F2F; 
-           font-size: 14px;
+           font-size: 13px;
            }
         }
         

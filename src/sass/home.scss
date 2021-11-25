@@ -86,7 +86,10 @@ body {
       text-align: center;
       margin-bottom: 39px;
     }
-
+    .cmn-box-wrapper{
+      @include media-breakpoint-down(sm){
+        margin: 10px 20px;  
+      }
     .cmn-box {
       max-width: 270px;
       width: 100%;
@@ -113,6 +116,8 @@ body {
         color: $primary;
       }
     }
+  }
+
     .prod-btn {
       padding-top: 52px;
       font-weight: 500;
@@ -133,17 +138,26 @@ body {
     background-position: center;
     background-color: rgba(0, 0, 0, 0.5);
     .discount-banner-wrap {
+        width: 100%;
+      @include media-breakpoint-between(sm,md){
+        width: 100%;
+      }
+      @include media-breakpoint-up(lg){
       display: flex;
       width: 100%;
       align-items: center;
-      justify-content: space-between;
+      justify-content: space-between; 
+      }
 
       .discount {
         max-width: 572px;
         .offer-text {
           color: #ffffff;
+          line-height: 35px;
+          @include media-breakpoint-up(sm){
           line-height: 57px;
           font-weight: 400;
+          }
         }
       }
       .btn-shop {
@@ -169,8 +183,11 @@ body {
     .left-box {
       .cmn-pro-box {
         background-color: #f5f5f5;
+        margin: 10px 10px;
+        @include media-breakpoint-up(sm){
         border-radius: 10px;
         padding: 0 20px 20px 20px;
+        }
         .pro-image {
           margin: 0;
           width: 100%;
@@ -180,23 +197,42 @@ body {
           }
         }
         .shoe-title {
+         @include media-breakpoint-down(sm){
           color: #111111;
           font-weight: 500;
+          font-size: 15px;
+          margin-left: 15px;
+         }
         }
         .btn-pro-price {
           background-color: #ffffff;
           border-radius: 17px;
+          font-size: 14px;
+          font-weight: 500;
+          color: $primary;
+          width: 65px;
+          height: 50px;
+          margin: 0 10px 10px 0;
+          @include media-breakpoint-up(sm){
+          border-radius: 17px;
           font-size: 16px;
           font-weight: 500;
           color: $primary;
+          }
         }
       }
     }
     .right-box {
       background-color: #f5f5f6;
       border-radius: 10px;
-      padding: 20px 0 45px 20px;
-
+      padding: 20px 0 45px 20px; 
+      margin: 0 10px;
+      @include media-breakpoint-up(sm){
+        border-radius: 10px;
+        padding: 20px 0 45px 20px;
+  
+      }
+     
       .btn-sale {
         border-radius: 17px;
       }
@@ -241,15 +277,20 @@ body {
       text-align: center;
       font-family: 500;
     }
-    .cmn-top-box {
-      margin-top: 40px;
-      background-color: #f5f5f5;
-      border-radius: 10px;
-      img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        object-position: center;
+    .cmn-top-wrapper{
+        @include media-breakpoint-down(sm){
+          margin-left: 20px;
+        }
+      .cmn-top-box {
+        margin-top: 40px;
+        background-color: #f5f5f5;
+        border-radius: 10px;
+        img {
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+          object-position: center;
+        }
       }
     }
     .top-pro-info{
@@ -257,9 +298,18 @@ body {
       justify-content: space-between;
       padding-top: 10px;
     .top-pro-title {
+      @include media-breakpoint-down(sm){
+      padding-top: 16px;
+      color: #111111;
+      font-weight: 500; 
+      font-size: 16px;
+      margin-left: 25px;
+      }
+      @include media-breakpoint-up(sm){
       padding-top: 16px;
       color: #111111;
       font-weight: 500;
+      }
     }
     .btn-top-price {
       background-color: #FF4F0416;
